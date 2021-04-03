@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -6,14 +10,14 @@
   gap: 20px;
   font-family: sans-serif;
   min-height: 100vh;
-  background: aliceblue;
+  background: #202020;
 }
 
 .button {
   background: #e91e63;
   font-size: 18px;
   color: #fff;
-  border: 1px solid transparent;
+  border: none;
   padding: 16px 24px;
   border-radius: 8px;
   cursor: pointer;
@@ -27,13 +31,15 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background .3s ease-out;
+  box-sizing: border-box;
+  user-select: none;
 }
 .iconButton > svg {
   width: 24px;
   height: 24px;
 }
 .iconButton:hover {
-  background: #ccd3da;
+  background: #333;
 }
 
 .iconButton:active,
@@ -41,4 +47,5 @@
 .button:active,
 .button:focus {
   outline: none;
+  border-color: transparent;
 }
