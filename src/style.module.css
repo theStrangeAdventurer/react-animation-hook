@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: aliceblue;
+}
+
+.button {
+  background: #e91e63;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 16px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.iconButton {
+  border: none;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .3s ease-out;
+}
+.iconButton > svg {
+  width: 24px;
+  height: 24px;
+}
+.iconButton:hover {
+  background: #ccd3da;
+}
+
+.iconButton:active,
+.iconButton:focus,
+.button:active,
+.button:focus {
+  outline: none;
+}
